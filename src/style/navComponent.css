@@ -1,0 +1,27 @@
+.nav-component-container{
+    width: 100%;
+    height: 100%;
+}
+.media-container{
+    width: 100%;
+    height: 10%;
+    border-bottom: 2px solid #00000025;
+    /* background-color: aqua; */
+}
+.header-nav-container{
+    width: 100%;
+    height:15%;
+    border-bottom: 2px solid #00000025;
+}
+.item-list-container{
+    width: 100%;
+    height: 65%;
+    border-bottom: 2px solid #00000025;
+}
+#ol-list-item-nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow-y: scroll; */
+}
