@@ -1,0 +1,28 @@
+.header-item-container{
+    height: 55%;
+    width: 30%;
+    margin-left: 2%;
+    display: flex;
+}
+.header-item-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+.header-item-body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    
+}
+.header-item-desp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;  
+}

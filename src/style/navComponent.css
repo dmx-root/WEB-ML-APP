@@ -23,5 +23,8 @@
     padding: 0;
     width: 100%;
     height: 100%;
-    /* overflow-y: scroll; */
+}
+#ol-lis-header-item-nav{
+    margin: 0;
+    padding: 0;
 }

@@ -1,0 +1,38 @@
+.op-group-list-container{
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 1.5%;
+    box-shadow: #CCD1D1 2px 2px 3px;
+
+}
+.op-group-list-title-container{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00000065;
+    font-weight: bold;
+}
+
+.op-group-list-analitycs-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:15%;
+}
+
+.op-group-list-body-container{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.op-group-list-analitycs-frame-container{
+    width: 95%;
+    height: 93%;
+    /* background-color: aqua; */
+
+}

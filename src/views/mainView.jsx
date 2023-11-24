@@ -1,5 +1,7 @@
 import '../style/vistaPrincipal.css'
-import {NavComponent} from '../components/NavComponent'
+import {NavComponent} from '../components/navComponent'
+import { HeaderComponent } from '../components/headerComponet'
+import { MainBodyComponent} from '../components/mainBodyComponent'
 
 export function MainView(){
     return(
@@ -8,8 +10,12 @@ export function MainView(){
                 <NavComponent/>
             </div>
             <div className="root">
-                <div className="header-container"></div>
-                <div className="body-container"></div>
+                <div className="header-container">
+                    <HeaderComponent/>
+                </div>
+                <div className="body-container">
+                    <MainBodyComponent/>
+                </div>
             </div>
         </div>
     )
