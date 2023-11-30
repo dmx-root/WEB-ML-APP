@@ -1,13 +1,20 @@
 #nav-item-container{
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: 5vh;
-    /* background-color: #ffffff10; */
+    height: 15vh;
     display: flex;
     color: #FFF;
+    /* font-weight: bold; */
     font-size: medium;
     margin-bottom: 1%;
+}
+#nav-item-container:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    width: 100%;
+    align-self: center;
+    border-radius: 4px;
+    color: #10285F ;
+    font-weight: bold;
 }
 .icon-nav-item-container{
     width: 20%;
@@ -27,4 +34,9 @@
 }
 span{
     margin-left: 15%;
+}
+.icon-nav-group-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

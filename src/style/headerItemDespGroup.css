@@ -1,0 +1,18 @@
+.header-item-desp-group-container{
+    height: 6vh;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #00000080;
+    font-size: 2.2vh;
+    padding-left: 10%;
+    /* background-color: aqua; */
+
+}
+.header-item-desp-group-container:hover{
+    background-color: #00000007;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+

@@ -24,4 +24,15 @@
     align-items: center;
     height: 100%;
     width: 20%;
+    /* background-color:black; */
+}
+.header-nav-items-container-desp{
+    height: min-content;
+    width: 30vw;
+    background-color: aqua;
+    position: relative;
+    
+}
+.header-desp-conatiner{
+    margin-left: 1%;
 }

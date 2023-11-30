@@ -1,0 +1,66 @@
+.board-target-ocr-items-container{
+    height: 8vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.board-target-ocr-items-frame{
+    width: 98%;
+    height: 65%;
+    display: flex;
+
+}
+
+#board-target-ocr-items-element-container{
+    height: 100%;
+    width: 32%;
+    margin-right: 2%;
+    border-radius: 1vh;
+
+}
+
+.board-target-ocr-items-button-container{
+    width:100%;
+    height: 100%;
+    border: none;
+    display: flex;
+    padding: 0;
+    font-size: 1.5vh;
+    border-radius: 0.5vh;
+    background-color: #D5D8DC ;
+    border-bottom: 1px solid #7F8C8D;
+    border-right: 1px solid #7F8C8D;
+}
+
+.board-target-ocr-items-button-container:hover{
+    cursor: pointer;
+    background-color:  #7F8C8D80;
+}
+
+.board-target-ocr-items-button-icon-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board-target-ocr-items-button-information-container{
+    width: 70%;
+    /* background-color: aqua; */
+    height: 100%;
+}
+.board-target-ocr-items-button-information-label-container{
+    /* background-color: aqua; */
+    height: 50%;
+    padding: 0.2vh;
+    color: #777;
+    font-weight: bold;
+}
+.board-target-ocr-items-button-information-description-container{
+    height: 50%;
+    padding-bottom: 0.4vh;
+    color: #777;
+}

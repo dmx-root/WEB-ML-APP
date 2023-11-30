@@ -1,0 +1,50 @@
+.user-main-component-container{
+    display: inline-block;
+    height: 14.5vh;
+    width: 14.5vh;
+    background-color: #B1C1FD;
+    border-radius: 1vh;
+    margin-left: 2%;
+    font-size: 1.5vh;
+}
+.user-main-component-container:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.user-main-component-header-container{
+    display: flex;
+    height: 40%;
+    width: 100%;
+}
+.user-main-component-icon-container{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.user-main-component-information-container{
+    width: 65%;
+    height: 100%;
+    color: #4F69CD ;
+}
+/* #2546BF  */
+.user-main-component-info{
+    font-weight: bold;
+}
+.user-main-component-row-container{
+    height: 25%;
+    width: 100%;
+    display: flex;
+}
+.user-main-component-title-container{
+    height: 100%;
+    width: 50%;
+    color:#26387A;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 2px;
+}
+.user-main-component-content-container{
+    color:  #2546BF ;
+}

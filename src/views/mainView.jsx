@@ -2,6 +2,8 @@ import '../style/vistaPrincipal.css'
 import {NavComponent} from '../components/navComponent'
 import { HeaderComponent } from '../components/headerComponet'
 import { MainBodyComponent} from '../components/mainBodyComponent'
+import { ModalExtendComponent } from '../components/modalExtendComponent'
+import { ModalOpHeader } from '../components/modalOpHeader'
 
 export function MainView(){
     return(
@@ -17,6 +19,16 @@ export function MainView(){
                     <MainBodyComponent/>
                 </div>
             </div>
+
+            {/* <ModalExtendComponent label={'lista de ops'}>
+                {
+                    <>
+                        <ModalOpHeader/>
+                        <ModalOpHeader/>
+                    </>
+                }
+            </ModalExtendComponent> */}
+
         </div>
     )
 }

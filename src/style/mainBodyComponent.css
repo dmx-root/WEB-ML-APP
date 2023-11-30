@@ -34,9 +34,11 @@
     margin-left: 2%;
 }
 .body-component-seccion-3-ocr-list-container{
-    height: 48%;
+    width: 100%;
+    height: 47%;
 }
 .body-component-seccion-3-users-list-container{
+    width: 100%;
     margin-top: 8%;
-    height: 48%;
+    height: 47%;
 }

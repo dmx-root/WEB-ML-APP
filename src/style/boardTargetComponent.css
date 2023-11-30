@@ -1,0 +1,28 @@
+.board-target-component-container{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    background-color: #FFF;
+}
+/* .board-target-component-container:hover{
+    border: 2px solid #27B7FF;
+    cursor: pointer;
+} */
+.board-target-component-frame{
+    width: 95%;
+    margin: 2%;
+}
+.board-target-component-title-label{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    color: #999;
+    font-weight: bold;
+    margin-bottom: 2%;
+}

@@ -1,0 +1,20 @@
+.header-list-desp-group-container{
+    height: min-content;
+    width: 18vw;
+    background-color: #FFF;
+    position: absolute;
+    /* right: 0; */
+    z-index: 10;
+    border-radius: 1vh 1vh 2vh 2vh;
+    margin-top: 0.2%;
+    box-shadow: #00000040 0px 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-list-desp-group-frame{
+    height: 90%;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}

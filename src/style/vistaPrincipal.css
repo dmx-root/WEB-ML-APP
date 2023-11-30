@@ -5,7 +5,7 @@
     display: flex;
 }
 .nav-container{
-    width: 20%;
+    width: 23%;
     height: 100%;
     background-color: #10285F ;
 }
@@ -22,5 +22,5 @@
 }
 .body-container{
     width: 100%;
-    height: 89.5%;
+    height: 88.5%;
 }

@@ -1,0 +1,22 @@
+.header-media-action-icon-container{
+    /* background-color: aqua; */
+    margin-left: 10%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vh;
+}
+.header-action-container-icon{
+    height:6vh;
+    width: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.header-action-container-icon:hover{
+    background-color: #00000015;
+    cursor: pointer;
+}
