@@ -1,0 +1,15 @@
+.auth-header-container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.auth-header-container img{
+    background-color: aqua;
+    object-fit:cover;
+    height: 100%;
+    width: 40%;
+    opacity: 0.9;
+}

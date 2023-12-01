@@ -1,0 +1,10 @@
+.auth-form-container{
+    width: 100%;
+    height: min-content;
+
+}
+#form{
+    width: 100%;
+    height: min-content;
+    /* background-color: aqua; */
+}

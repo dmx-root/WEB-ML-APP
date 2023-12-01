@@ -1,0 +1,17 @@
+.auth-select-section-container{
+    height: 3vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #777;
+    font-weight: bold;
+    font-size: 2vh;
+    
+}
+
+.auth-view-form-action-redirect:hover{
+    color: #999;
+    cursor: pointer;
+}
