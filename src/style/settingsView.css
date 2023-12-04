@@ -1,0 +1,26 @@
+.settings-view-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5E8E8;
+    display: flex;
+}
+.settings-view-nav-container{
+    width: 20%;
+    height: 100%;
+    background-color: #DDD ;
+}
+.settings-view-body-container{
+    height: 100%;
+    width: 80%;
+}
+.settings-view-header-conatiner{
+    width: 100%;
+    height: 10%;
+    background-color: #FFF;
+    /* border-bottom:1px solid #CCD1D1; */
+    box-shadow: #CCD1D1 2px 2px 2px;
+}
+.settings-view-main-container{
+    width: 100%;
+    height: 88.5%;
+}

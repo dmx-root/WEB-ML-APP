@@ -1,0 +1,40 @@
+#settings-list-group-li-container{
+    /* margin-bottom: 1%; */
+    
+    list-style-type: none;
+}
+
+.settings-list-group-container{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.settings-list-group-frame-container{
+    width: 80%;
+    
+}
+.settings-list-group-header-container{
+    width: 100%;
+    color: #555;
+    font-weight: 500;
+    font-size: 3vh;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.settings-list-group-body-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    /* margin-top: 2vh;
+    margin-bottom: 2vh; */
+    height: min-content;
+    border-bottom: 1px solid #555;
+}
+.settings-list-group-body-container ol{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}

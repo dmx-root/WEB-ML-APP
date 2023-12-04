@@ -1,0 +1,30 @@
+.settings-list-envelope-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.settings-list-envelope-frame{
+    width: 80%;
+    height: 95%;
+    border-radius: 1vh;
+    background-color:#FFF;
+    margin-left: 1%;
+    overflow-y: scroll;
+}
+
+.settings-list-envelope-frame::-webkit-scrollbar {
+    width: 4px; /* Ancho de la barra de desplazamiento */
+    /* height: 5px; */
+}
+  
+.settings-list-envelope-frame::-webkit-scrollbar-thumb {
+    background-color: #CCC; /* Color de la barra de desplazamiento */
+    border-radius: 6px; /* Radio de la esquina de la barra de desplazamiento */
+}
+
+.settings-list-envelope-frame::-webkit-scrollbar-thumb:hover {
+background-color: #555; /* Color de la barra de desplazamiento al pasar el ratón */
+}

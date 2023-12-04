@@ -1,9 +1,9 @@
-import '../style/authMainView.css';
-import { AuthButtonAction } from '../components/authButtonAction';
-import { AuthForm } from '../components/authForm';
-import { AuthHeader } from '../components/authHeader';
-import { AuthInput } from '../components/authInput';
-import { AuthSelectSection } from '../components/authSelectSection';
+import { AuthButtonAction }     from '../components/authButtonAction';
+import { AuthForm }             from '../components/authForm';
+import { AuthHeader }           from '../components/authHeader';
+import { AuthInput }            from '../components/authInput';
+import { AuthSelectSection }    from '../components/authSelectSection';
+import                               '../style/authMainView.css';
 
 export function AuthMainView(){
     return(
@@ -18,14 +18,25 @@ export function AuthMainView(){
                             </div>
                             <AuthInput label={'DOCUMENTO'} type={'text'} placeholder={'Ingrese su documento'}/>
                             <AuthInput label={'CONTRASEÑA'} type={'password'} placeholder={'* * * * * * *'}/>
-                            <AuthInput label={'CONTRASEÑA'} type={'password'} placeholder={'* * * * * * *'}/>
                             <AuthSelectSection/>
                             <AuthButtonAction/>
                         </AuthForm>
                      </div>
                 </div>
                 <div className="auth-view-form-media-container">
-                   
+                    <div className="auth-view-form-media-img-container">
+                        
+                    </div>
+                    <div className="auth-view-form-media-content-conteiner">
+                        <div className="auth-view-form-media-content-logo-container">
+                            <img src={require('../resources/images/tranparentLogo.png')} alt="log" />
+                        </div>
+                        <div className="auth-view-form-media-content-info-container">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
