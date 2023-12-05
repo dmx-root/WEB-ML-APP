@@ -1,0 +1,47 @@
+.manage-settings-component-extend-container{
+    width: 60Vh;
+    height: min-content;
+}
+.manage-setting-component-exdend-frame{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.manage-setting-component-exdend-action-container{
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.manage-setting-component-exdend-button-container{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manage-setting-component-exdend-button-container button{
+    height: 50%;
+    width: 90%;
+    font-size: 2vh;
+    /* border-radius: 1vh; */
+    border-radius: 1vh;
+    border: none;
+    font-weight: 600;
+}
+#btn-guardar{
+    background-color:  #10285F;
+    color: #FFF;
+}
+#btn-cancelar{
+    background-color:  #FFF;
+    color:  #10285F;
+    border: 1px solid  #CCC;
+}
+.manage-setting-component-exdend-button-container button:hover{
+    cursor: pointer;
+    opacity: 0.95;
+}

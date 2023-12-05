@@ -1,6 +1,6 @@
 import '../style/settingsAside.css';
 
-export function SettingsAside({children}){
+export function SettingsAside({children,label}){
     return(
         <div className="settings-aside-container">
             <div className="settings-aside-header-container">
@@ -13,7 +13,7 @@ export function SettingsAside({children}){
                     </span>
                 </div>
                 <div className="settings-aside-header-label-container">
-                    <h1>Administración</h1>
+                    <h1>{label}</h1>
                 </div>
             </div>
             <div className="settings-aside-items-list-container">

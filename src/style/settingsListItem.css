@@ -10,11 +10,31 @@
     font-size: 2vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     border-radius: 0.5vh;
     padding-left: 2%;
 }
 .settings-List-Item-container:hover{
     cursor: pointer;
     background-color: #DDD;
+}
+.settings-list-item-icon-container{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.settings-list-item-label-container{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: aqua; */
+    
+}
+.settings-list-item-label-container span{
+    padding: 0;
+    margin-left: 2%;
 }

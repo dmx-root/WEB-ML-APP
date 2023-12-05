@@ -1,0 +1,38 @@
+.manage-settings-component-extend-item-container{
+    height: 15vh;
+    width: 100%;
+}
+.manage-settings-component-extend-item-label-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding-left: 5%; */
+}
+.manage-settings-component-extend-item-label-container label{
+    font-size: 2VH;
+    color: #222;
+    font-weight: 600;
+}
+.manage-settings-component-extend-item-input-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding-left: 5%; */
+}
+.manage-settings-component-extend-item-input-container input{
+    width: 100%;
+    height: 70%;
+    border-radius: 1vh;
+    border: 1px solid #CCC;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.manage-settings-component-extend-item-input-container input:focus{
+    border: 1px solid blue;
+
+}

@@ -1,0 +1,17 @@
+.user-profile-aside-extend-information-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-profile-aside-extend-information-frame-container{
+    width: 90%;
+    height: 90%;
+    border: 1px solid #FFFfff20;
+    /* overflow-y: scroll; */
+}
+.user-profile-aside-extend-information-frame-container ol{
+    margin: 0;
+    padding: 0;
+}

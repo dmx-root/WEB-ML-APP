@@ -1,0 +1,22 @@
+.user-profile-aside-information-component-container{
+    height: 100%;
+    width: 100%;
+}
+.user-profile-aside-information-name-container{
+    height: 30%;
+    width: 100%;
+    color: #FFFF;
+}
+.user-profile-aside-information-name-container h1{
+    font-weight: 600;
+    margin: 0;
+    font-size: 5vh;
+    
+}
+.user-profile-aside-information-description-container{
+    width: 100%;
+    height: 70%;
+    color: #FFF;
+    font-size: 2.5vh;
+    font-weight: 400;
+}
