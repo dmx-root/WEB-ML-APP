@@ -8,6 +8,7 @@ import { RenderListEnvelope } from '../components/renderListEnvelope'
 import { OpMainComponent } from '../components/opMainComponent'
 import { ManageSettingsComponentExtends } from '../components/manageSettingsComponentExtends'
 import { ManageSettingsComponentExtendsItem } from '../components/manageSettingsComponentExtendsItem'
+import { ModalOpHeaderItem } from '../components/modalOpHeaderItem'
 
 export function MainView(){
     return(
@@ -32,6 +33,35 @@ export function MainView(){
                     </>
                 }
             </ModalExtendComponent> */}
+            <ModalExtendComponent label={'Lista de usuarios deshabilitados'}>
+                {
+                    <>
+                        <ModalOpHeader>
+                            <ModalOpHeaderItem label1={'OP'} content1={'MOB3547'} label2={'Módulo'} content2={'5'}/>
+                            <ModalOpHeaderItem label1={'Ejecutado'} content1={'1200'} label2={'Sin Ejec'} content2={'800'}/>
+                            <ModalOpHeaderItem label1={'Ejecutado'} content1={'1200'} label2={'Sin Ejec'} content2={'800'}/>
+                        </ModalOpHeader>
+                        <RenderListEnvelope>
+                            <OpMainComponent/>
+                            <OpMainComponent/>
+                            <OpMainComponent/>
+                            <OpMainComponent/>
+                            <OpMainComponent/>
+                        </RenderListEnvelope>
+                    </>
+                }
+            </ModalExtendComponent>
+            {/* <ModalExtendComponent label={'Reestablecer contraseña'}>
+                <ManageSettingsComponentExtends>
+                    <ManageSettingsComponentExtendsItem label={'Ingrese el documento'} type={'document'}/>
+                </ManageSettingsComponentExtends>
+            </ModalExtendComponent> */}
+            {/* <ModalExtendComponent label={'lista de OP'}>
+                <ModalOpHeader>
+                    <ModalOpHeaderItem label1={'OP'} content1={'MOB3547'} label2={'Módulo'} content2={'5'}/>
+                    <ModalOpHeaderItem label1={'Ejecutado'} content1={'1200'} label2={'Sin Ejec'} content2={'800'}/>
+                </ModalOpHeader>
+            </ModalExtendComponent> */}
             {/* <ModalExtendComponent label={'Lista de usuarios deshabilitados'}>
                 {
                     <>
@@ -45,19 +75,6 @@ export function MainView(){
                     </>
                 }
             </ModalExtendComponent> */}
-            <ModalExtendComponent label={'Reestablecer contraseña'}>
-                
-                    <ManageSettingsComponentExtends>
-                        
-                        <ManageSettingsComponentExtendsItem label={'Ingrese el documento'} type={'document'}/>
-                        <ManageSettingsComponentExtendsItem label={'nueva contaseña'} type={'password'}/>
-                        <ManageSettingsComponentExtendsItem label={'nueva contaseña'} type={'password'}/>
-                        <ManageSettingsComponentExtendsItem label={'confirme la contraseña'} type={'password'}/>
-                        
-                    </ManageSettingsComponentExtends>
-                
-            </ModalExtendComponent>
-
         </div>
     )
 }

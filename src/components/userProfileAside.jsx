@@ -12,7 +12,10 @@ export function UserProfileAside(){
                 <UserProfileAsideHeader/>
             </div>
             <div className="user-profile-aside-information-container">
-                <UserProfileAsideInformation name={'David Morales'} description={'Desarrollador Junior'}/>
+                <UserProfileAsideInformation name={'David Morales'}>
+                    <p>Desarrollador Junior</p>
+                    <p>1146441925</p>
+                </UserProfileAsideInformation>
             </div>
             <div className="user-profile-aside-extends-information-container">
                 <UserProfileAsideExtendsInformation>

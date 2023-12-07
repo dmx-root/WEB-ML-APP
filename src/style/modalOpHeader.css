@@ -1,5 +1,29 @@
 .modal-op-header-container{
-    height: 10vh;
+    height: min-content;
     width:  100%;
     margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B1C1FD;
+    border-radius: 1vh;
+}
+.modal-op-header-frame{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.modal-op-header-icon-container{
+    width: 15%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.modal-op-header-information-container{
+    width: 85%;
+    height: min-content;
+    color: #26387A;
 }
