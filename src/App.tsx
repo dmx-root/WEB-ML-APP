@@ -3,14 +3,16 @@ import './style/App.css'
 import {MainView} from './views/mainView'
 import { SettingsView } from './views/settingsView';
 import { UserProfileView } from './views/userProfileView';
+import { ProductionReviseView } from './views/productionReviseView';
 
 function App() {
   return (
     <div className="App">
-      <MainView/>
+      {/* <MainView/> */}
       {/* <AuthMainView/> */}
       {/* <SettingsView/> */}
       {/* <UserProfileView/> */}
+      <ProductionReviseView/>
     </div>
   );
 }

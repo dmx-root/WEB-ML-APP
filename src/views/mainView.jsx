@@ -24,7 +24,6 @@ export function MainView(){
                     <MainBodyComponent/>
                 </div>
             </div>
-
             {/* <ModalExtendComponent label={'lista de ops'}>
                 {
                     <>

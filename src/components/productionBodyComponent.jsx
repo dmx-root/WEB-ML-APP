@@ -1,23 +1,22 @@
-import { BoardTargetComponent }         from './boardTargetComponent'
-import { BoardTargetListEnvelopeY }     from './boardTargetListEnvelopeY'
-import { BoardTargetModuloAnalitycs }   from './boardTargetModuloAnalitycs'
-import { BoardTargetModuloItems }       from './boardTargetModuloItems'
-import { BoardTargetOcrItems }          from './boardTargetOcrItems'
-import { OpMainComponent }              from './opMainComponent'
-import { BoardTargetOpItems }           from './boardTargetOpitems'
-import { BoardTargetOpAnalitycs }       from './boardTargetOpAnalitycs'
-import { ModuloMainComponent }          from './moduloMainComponent'
-import { BoardTargetListEnvelopeX }     from './boardTargetListEnvelopeX'
-import { OcrMainComponent }             from './ocrMainComponent'
-import { UserMainComponent }            from './userMainComponent'
-import                                  '../style/mainBodyComponent.css'
+import '../style/productionBodyComponent.css'
+import { BoardTargetComponent }             from './boardTargetComponent'
+import { BoardTargetListEnvelopeX }         from './boardTargetListEnvelopeX'
+import { BoardTargetListEnvelopeY }         from './boardTargetListEnvelopeY'
+import { BoardTargetModuloAnalitycs }       from './boardTargetModuloAnalitycs'
+import { BoardTargetModuloItems }           from './boardTargetModuloItems'
+import { BoardTargetOcrItems }              from './boardTargetOcrItems'
+import { BoardTargetOpAnalitycs }           from './boardTargetOpAnalitycs'
+import { BoardTargetOpItems }               from './boardTargetOpitems'
+import { ModuloMainComponent }              from './moduloMainComponent'
+import { OcrMainComponent }                 from './ocrMainComponent'
+import { OpMainComponent }                  from './opMainComponent'
 
-export function MainBodyComponent(){
+export function ProductionBodyComponent(){
     return(
-        <main id="body-main-conatiner">
-            <div className="body-component-container">
-                <div className="body-component-fame">
-                    <div className="body-component-section-1-container">
+        <main id="production-body-main-conatiner">
+            <div className="production-body-component-container">
+                <div className="production-body-component-fame">
+                    <div className="production-body-component-section-1-container">
                         <BoardTargetComponent label={'Lista de OP'}>
                             <BoardTargetOpAnalitycs/>
                             <BoardTargetOpItems/>
@@ -31,7 +30,7 @@ export function MainBodyComponent(){
                             </BoardTargetListEnvelopeY>
                         </BoardTargetComponent>
                     </div>
-                    <div className="body-component-section-2-container">
+                    <div className="production-body-component-section-2-container">
                         <BoardTargetComponent label={'Lista de Módulos'}>
                             <BoardTargetModuloAnalitycs/>
                             <BoardTargetModuloItems/>
@@ -42,14 +41,12 @@ export function MainBodyComponent(){
                                 <ModuloMainComponent/>
                                 <ModuloMainComponent/>
                                 <ModuloMainComponent/>
-                                <ModuloMainComponent/>
-                                <ModuloMainComponent/>
                             </BoardTargetListEnvelopeY>
                         </BoardTargetComponent>
                     </div>
-                    <div className="body-component-section-3-container">
-                        <div className="body-component-seccion-3-ocr-list-container">
-                            <BoardTargetComponent label={'Lista de Registros'}>
+                    <div className="production-body-component-section-3-container">
+                        <div className="production-body-component-seccion-3-ocr-list-container">
+                            <BoardTargetComponent label={'Lista de Registros de primera'}>
                                 <BoardTargetOcrItems/>
                                 <BoardTargetListEnvelopeX>
                                     <OcrMainComponent/>
@@ -57,18 +54,18 @@ export function MainBodyComponent(){
                                     <OcrMainComponent/>
                                     <OcrMainComponent/>
                                 </BoardTargetListEnvelopeX>
-                            </BoardTargetComponent>
+                            </BoardTargetComponent>    
                         </div>
-                        <div className="body-component-seccion-3-users-list-container">
-                            <BoardTargetComponent label={'Lista de Usuarios'}>
+                        <div className="production-body-component-seccion-3-users-list-container">
+                            <BoardTargetComponent label={'Lista de Registros de segunda'}>
                                 <BoardTargetOcrItems/>
                                 <BoardTargetListEnvelopeX>
-                                    <UserMainComponent/>
-                                    <UserMainComponent/>
-                                    <UserMainComponent/>
-                                    <UserMainComponent/>
+                                    <OcrMainComponent/>
+                                    <OcrMainComponent/>
+                                    <OcrMainComponent/>
+                                    <OcrMainComponent/>
                                 </BoardTargetListEnvelopeX>
-                            </BoardTargetComponent>
+                            </BoardTargetComponent>    
                         </div>
                     </div>
                 </div>

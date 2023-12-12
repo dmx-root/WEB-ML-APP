@@ -1,0 +1,40 @@
+#production-body-main-conatiner{
+    height: 100%;
+    width: 100%;
+}
+.production-body-component-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.production-body-component-fame{
+    display: flex;
+    width: 98%;
+    height: 93%;
+}
+.production-body-component-section-1-container{
+    width: 30%;
+    height: 100%;
+    
+}
+.production-body-component-section-2-container{
+    width: 30%;
+    height: 100%;
+    margin-left: 2%;
+}
+.production-body-component-section-3-container{
+    width: 40%;
+    height: 100%;
+    margin-left: 2%;
+}
+.production-body-component-seccion-3-ocr-list-container{
+    width: 100%;
+    height: 47%;
+}
+.production-body-component-seccion-3-users-list-container{
+    width: 100%;
+    margin-top: 8%;
+    height: 47%;
+}

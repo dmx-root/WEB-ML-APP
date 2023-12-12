@@ -1,6 +1,6 @@
-.settings-aside-item-container{
+.production-revise-aside-item-container{
     height: 6vh;
-    width: 90%;
+    width:100%;
     font-size: large;
     margin-bottom: 1%;
     display: flex;
@@ -8,11 +8,16 @@
     justify-content: flex-start;
     border-radius: 3vh;
     font-size: 2.5vh;
-    color: #444;
+    color: #FFF;
     font-weight: 400;
     padding-left: 10%;
 }
-.settings-aside-item-container:hover{
-    /* background-color: #BBB; */
+#production-revise-aside-item-ol-container{
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+.production-revise-aside-item-container:hover{
+    background-color: #FFFFFF10;
     cursor: pointer;
 }

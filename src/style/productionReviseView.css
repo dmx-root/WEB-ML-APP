@@ -1,0 +1,28 @@
+.production-revise-view-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5E8E8;
+    display: flex;
+}
+.production-revise-view-nav-container{
+    width: 20%;
+    height: 100%;
+    background-color: #121E84 ;
+    color: #FFF;
+}
+.production-revise-view-body-container{
+    height: 100%;
+    width: 80%;
+}
+.production-revise-view-body-header-conatiner{
+    width: 100%;
+    height: 10%;
+    background-color: #FFF;
+    /* border-bottom:1px solid #CCD1D1; */
+    box-shadow: #CCD1D1 2px 2px 2px;
+    /* background-color: aqua; */
+}
+.production-revise-view-body-main-container{
+    width: 100%;
+    height: 88.5%;
+}

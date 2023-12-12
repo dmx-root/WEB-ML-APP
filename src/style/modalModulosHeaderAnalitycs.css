@@ -1,0 +1,30 @@
+.modal-modulos-header-analitycs-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    font-size: 1.5vh;
+    background-color: #B1C1FD;
+}
+
+.modal-modulos-header-analitycs-row-container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.modal-modulos-header-analitycs-row-title-container{
+    /* background-color: aqua;  */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #121E84;
+}
+.modal-modulos-header-analitycs-row-content-container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
