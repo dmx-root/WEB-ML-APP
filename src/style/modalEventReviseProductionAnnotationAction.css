@@ -1,0 +1,42 @@
+.modal-eventt-revise-production-annotation-action-container{
+    width: 50vw;
+    height: 10vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE;
+}
+
+.modal-eventt-revise-production-annotation-action-frame-container{
+    width: 95%;
+    height: 80%;
+}
+
+.modal-eventt-revise-production-annotation-action-button-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-eventt-revise-production-annotation-action-button-container button{
+    width: 100%;
+    height: 90%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 2.2vh;
+}
+
+
+.btn-send-annotation-container button{
+    background-color: #26387A;
+    color: #FFF;
+
+}
+.modal-eventt-revise-production-annotation-action-button-container button:hover{
+    cursor: pointer;
+    opacity: 0.95;
+}

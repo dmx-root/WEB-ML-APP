@@ -1,0 +1,40 @@
+.input-bar-component-container{
+    height:7vh;
+    width: 100%;
+}
+.input-bar-component-row-container{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+.input-bar-component-row-column-container{
+    width: 50%;
+    height: 100%;
+    border: 1.5px solid #DDD;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    background-color: #fff;
+    /* font-weight: bold; */
+}
+.input-bar-component-title{
+    font-weight: bold;
+    /* background-color: #DDD; */
+}
+.input-bar-component-content input{
+    width: 100%;
+    height: 100%;
+    outline-style: none;
+    border: 1.5px solid #DDD;
+    text-align: center;
+    font-size: 2.2vh;
+    color: #777;
+    
+}
+.input-bar-component-content input:focus{
+    outline-style: groove;
+    outline-color: aqua;
+
+}

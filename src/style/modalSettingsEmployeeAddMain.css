@@ -1,0 +1,24 @@
+.modal-setting-employee-add-main-container{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #EEE;
+    border-radius: 5px;
+    /* background-color: #EEE; */
+}
+.modal-setting-employee-add-main-title-container{
+    width: 95%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    color: #777;
+    font-weight: bold;
+}
+.modal-setting-employee-add-main-frame{
+    padding: 2%;
+    width: 95%;
+    height: 80%;
+}

@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       {/* <MainView/> */}
       {/* <AuthMainView/> */}
-      {/* <SettingsView/> */}
+      <SettingsView/>
       {/* <UserProfileView/> */}
-      <ProductionReviseView/>
+      {/* <ProductionReviseView/> */}
     </div>
   );
 }

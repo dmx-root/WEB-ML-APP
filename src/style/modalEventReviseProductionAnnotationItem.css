@@ -1,0 +1,25 @@
+.modal-eventt-revise-production-annotation-item-container{
+    height:7vh;
+    width: 100%;
+}
+.modal-eventt-revise-production-annotation-item-row-container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+.modal-eventt-revise-production-annotation-item-row-column-container{
+    width: 50%;
+    height: 100%;
+    border: 1.5px solid #DDD;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    background-color: #fff;
+    /* font-weight: bold; */
+}
+.modal-evt-annotation-title{
+    font-weight: bold;
+    /* background-color: #DDD; */
+}

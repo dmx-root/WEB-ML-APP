@@ -1,0 +1,14 @@
+.modal-setting-employee-add-header-container{
+    width: 40vw;
+    height: min-content;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #EEE;
+    margin-bottom: 5%;
+}
+.modal-setting-employee-add-header-frame-container{
+    padding: 4%;
+    width: 95%;
+    height: min-content;
+}

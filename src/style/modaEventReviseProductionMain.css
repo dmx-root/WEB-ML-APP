@@ -1,12 +1,16 @@
 .modal-eventt-revise-production-main-container{
-    height: 30vh;
-    width: 100%;
+    height: min-content;
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
 }
 .modal-eventt-revise-production-main-frame-container{
     width: 95%;
+    padding: 2%;
+    background-color: #EEE;
     height: 85%;
-    background-color: aqua;
+    border-radius: 5px;
+    /* background-color: aqua; */
 }

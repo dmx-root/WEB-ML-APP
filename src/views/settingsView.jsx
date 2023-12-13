@@ -6,6 +6,11 @@ import { SettingsListGroup } from '../components/settingsListGroup';
 import { SettingsListItem } from '../components/settingsListItem';
 import '../style/settingsView.css';
 import {useMenuSelection} from '../controllers/controllers'
+import { ModalExtendComponent } from '../components/modalExtendComponent';
+import { ModalSettingEmployeeAddHeader } from '../components/modalSettingEmployeeAddHeader';
+import { InputBarComponent } from '../components/InputBarComponent';
+import { ModalSettingsEmployeeAddMain } from '../components/modalSettingsEmployeeAddMain';
+import { ButtonActionAllWidth } from '../components/buttonActionAllWidth';
 
 export function SettingsView(){
 
@@ -49,6 +54,16 @@ export function SettingsView(){
                     </SettingsListEnvelope>
                 </div>
             </div>
+            <ModalExtendComponent label={'AGREGAR OPERARIO AL PROCESO'}>
+                <ModalSettingEmployeeAddHeader>
+                    <InputBarComponent title={'SOLICITAR OPERARIO'} placeholder={'CODIGO DE USUARIO'} inputType={'text'}/> 
+                </ModalSettingEmployeeAddHeader>
+                <ModalSettingsEmployeeAddMain>
+                    <InputBarComponent title={'SOLICITAR OPERARIO'} placeholder={'CODIGO DE USUARIO'} inputType={'text'}/>    
+                    <InputBarComponent title={'SOLICITAR OPERARIO'} placeholder={'CODIGO DE USUARIO'} inputType={'text'}/>    
+                </ModalSettingsEmployeeAddMain>
+                <ButtonActionAllWidth label={'AGREGAR'} backColor={'#26387A'} LetterColor={'#FFF'}/>   
+            </ModalExtendComponent>
         </div>
     )
 }
