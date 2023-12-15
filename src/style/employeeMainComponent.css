@@ -1,0 +1,51 @@
+.employe-main-component-container{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE;
+    border-radius: 5px;
+    border-bottom: 2px solid #BBB;
+}
+.employe-main-component-frame-container{
+    width: 97%;
+    height: 80%;
+    display: flex;   
+}
+.employe-main-component-icon-container{
+    height: 100%;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.employe-main-component-info-container{
+    height: 100%;
+    width:100%;
+}
+.employe-main-component-info-row-container{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left: 2%;
+}
+.employe-main-component-info-lab{
+    color: #555;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+.employe-main-component-info-doc{
+    color: #777;
+    font-size: 1.8vh;
+    font-weight: 600;
+    
+}
+.employe-main-component-info-cod{
+    color: #777;
+    font-size: 1.8vh;
+    font-weight: 400;
+    
+}

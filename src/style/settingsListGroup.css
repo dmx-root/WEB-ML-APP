@@ -11,14 +11,15 @@
     justify-content: center;
 }
 .settings-list-group-frame-container{
+    border-top: 1px solid #555;
     width: 80%;
     
 }
 .settings-list-group-header-container{
     width: 100%;
-    color: #555;
+    color: #444;
     font-weight: 500;
-    font-size: 3vh;
+    font-size: 2.5vh;
     height: 7vh;
     display: flex;
     justify-content: flex-start;
@@ -31,7 +32,6 @@
     /* margin-top: 2vh;
     margin-bottom: 2vh; */
     height: min-content;
-    border-bottom: 1px solid #555;
 }
 .settings-list-group-body-container ol{
     width: 100%;

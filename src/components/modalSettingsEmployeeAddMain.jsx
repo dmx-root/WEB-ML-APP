@@ -1,11 +1,11 @@
 import '../style/modalSettingsEmployeeAddMain.css';
 
-export function ModalSettingsEmployeeAddMain({children}){
+export function ModalSettingsEmployeeAddMain({children, label}){
     return(
         <div className="modal-setting-employee-add-main-container">
             <div className="modal-setting-employee-add-main-frame">
                 <div className="modal-setting-employee-add-main-title-container">
-                    <span>USUARIO ENCONTRADO</span>
+                    <span>{label}</span>
                 </div>
                 {children}
             </div>

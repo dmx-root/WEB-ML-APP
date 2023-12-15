@@ -1,13 +1,13 @@
-.input-bar-component-container{
+.input-action-edit-container{
     height:7vh;
     width: 100%;
 }
-.input-bar-component-row-container{
+.input-action-edit-row-container{
     height: 85%;
     width: 100%;
     display: flex;
 }
-.input-bar-component-row-column-container{
+.input-action-edit-row-column-container{
     width: 50%;
     height: 100%;
     border: 1.5px solid #DDD;
@@ -20,24 +20,28 @@
     background-color: #fff;
     /* font-weight: bold; */
 }
-.input-bar-component-row-column-container span{
+.input-action-edit-row-column-container span{
     margin-left: 5%;
 }
-.input-bar-component-title{
+.input-action-edit-title{
     font-weight: bold;
     /* background-color: #DDD; */
 }
-.input-bar-component-content input{
+.input-action-edit-content button{
     width: 100%;
     height: 100%;
     outline-style: none;
-    border: 1.5px solid #DDD;
     text-align: center;
     font-size: 2.2vh;
-    color: #777;
+    border: none;
+    font-weight: 700;
     
 }
-.input-bar-component-content input:focus{
+.input-action-edit-content button:hover{
+    cursor: pointer;
+    opacity: 0.95;
+}
+.input-action-edit-content input:focus{
     outline-style: groove;
     outline-color: aqua;
 
