@@ -1,0 +1,59 @@
+#op-information-component-li-container{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.op-information-component-container{
+    width: 98%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE;
+    border-radius: 5px;
+    border-bottom: 2px solid #CCC;
+    margin: 1%;
+}
+.op-information-component-container:hover{
+    cursor: pointer;
+    background-color: #DDD;
+}
+.op-information-component-icon-container{
+    width: 20vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.op-information-component-content-container{
+    width: 100%;
+    height: 100%;
+}
+.op-information-component-row-container{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.op-information-component-colunm-container{
+    width: 25%;
+    height: 100%;
+    font-size: 1.7vh;
+    font-weight: bold;
+    color: #777;
+    
+}
+.op-information-component-colunm-content{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.op-information-component-colunm-tittle{
+    display: flex;
+    align-items: center;
+    padding-left:2% ;
+}
+.op-information-component-colunm-tittle-remake{
+    color: #555;
+    font-weight: 500;
+    font-size: 2.5vh;
+}

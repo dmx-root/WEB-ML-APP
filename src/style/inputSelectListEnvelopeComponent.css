@@ -1,0 +1,84 @@
+.input-select-list-envelope-component-container{
+    height:7vh;
+    width: 100%;
+}
+.input-select-list-envelope-component-row-container{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+.input-select-list-envelope-component-row-column-container{
+    width: 50%;
+    height: 100%;
+    font-size: 2vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #777;
+}
+.input-select-list-envelope-component-row-column-container span{
+    margin-left: 5%;
+}
+.input-select-list-envelope-component-title{
+    background-color: #FFF;
+    font-weight: 700;
+}
+.input-select-list-envelope-component-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.input-select-list-envelope-component-row-column-container select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.input-select-list-envelope-component-row-column-container select::-ms-expand {
+    display: none;
+}
+
+.input-select-list-envelope-component-row-column-container{
+	position: relative;
+}
+
+.input-select-list-envelope-component-row-column-container select{
+	display: inline-block;
+	width: 98%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 100%;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #FFF;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #777;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.input-select-list-envelope-component-row-column-container select:hover{
+	outline-color: aqua;
+    cursor: pointer;
+}
+
+.input-select-list-envelope-component-row-column-container i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 5px);
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-left:2px solid #AAA;
+	border-bottom:2px solid #AAA;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.input-select-list-envelope-component-row-column-container:hover i{
+	margin-top: 3px;
+}

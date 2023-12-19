@@ -8,14 +8,18 @@
 
 .modal-render-list-y-container{
     width: 40vw;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #DDD;
+    margin-bottom: 2%;
+    border-radius: 2%;
 }
 .modal-render-list-y-frame{
     width: 95%;
     height: 90%;
+    border-radius: 5px;
 }
 
 #modal-render-list-y-li-container::-webkit-scrollbar {

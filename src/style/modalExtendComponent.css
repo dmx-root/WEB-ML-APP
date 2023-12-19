@@ -8,6 +8,8 @@
     position: absolute;
     top: 0;
     z-index: 10;
+    overflow-y: auto;
+    /* margin-top: 5%; */
 }
 
 .modal-extend-component-window{
@@ -41,9 +43,9 @@
     align-items: center;
     justify-content: flex-start;
     color: #00000099;
-    font-weight: 600;
+    font-weight:bold;
     padding-left: 3%;
-    font-size: 2vh;
+    font-size: 2.5vh;
 }
 .modal-extend-component-title-icon-envelope{
     height: 5vh;

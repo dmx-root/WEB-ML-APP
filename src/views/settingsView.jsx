@@ -4,7 +4,7 @@ import { SettingsAsideItem }                from '../components/settingsAsideIte
 import { SettingsListEnvelope }             from '../components/settingsListEnvelope';
 import { SettingsListGroup }                from '../components/settingsListGroup';
 import { SettingsListItem }                 from '../components/settingsListItem';
-import {useMenuSelection}                   from '../controllers/controllers';
+import { useMenuSelection }                 from '../controllers/controllers';
 import { ModalExtendComponent }             from '../components/modalExtendComponent';
 import { ModalSettingEmployeeAddHeader }    from '../components/modalSettingEmployeeAddHeader';
 import { InputBarComponent }                from '../components/InputBarComponent';
@@ -19,8 +19,14 @@ import { ModalRenderListY }                 from '../components/modalRenderListY
 import { AlertMainComponent }               from '../components/alertMainComponent';
 import { UserInformationComponent }         from '../components/userInformationComponent';
 import { ModuloInformationComponent }       from '../components/moduloInformationComponent';
-import                                           '../style/settingsView.css';
 import { ModalInterface } from '../modules/main';
+import                                           '../style/settingsView.css';
+import { OpInformationComponent } from '../components/opInformationComponent';
+import { OpDetailInformationComponent } from '../components/opDetailInformationComponent';
+import { OcrInformationComponent } from '../components/ocrInformationComponent';
+import { InputSliderComponent } from '../components/InputSliderComponent';
+import { InputSelectListEnvelopeComponent } from '../components/inputSelectListEnvelopeComponent';
+import { InputSelectListItemComponent } from '../components/inputSelectListItemComponent';
 
 
 
@@ -298,18 +304,285 @@ export function SettingsView(){
             </>
             {/* <ModalExtendComponent label={'LISTA DE MÓDULOS'}>
                 <ModalSettingEmployeeAddHeader>
-                    <InputBarComponent title={'FILTRAR POR:'} placeholder={'FILTRO'} inputType={'number'}/>
+                <InputBarComponent title={'FILTRAR POR:'} placeholder={'FILTRO'} inputType={'number'}/>
                 </ModalSettingEmployeeAddHeader>
                 <ModalRenderListY>
+                <ModuloInformationComponent/>
+                <ModuloInformationComponent/>
                     <ModuloInformationComponent/>
                     <ModuloInformationComponent/>
                     <ModuloInformationComponent/>
                     <ModuloInformationComponent/>
-                    <ModuloInformationComponent/>
-                    <ModuloInformationComponent/>
-                </ModalRenderListY>
-            </ModalExtendComponent> */}
-
+                    </ModalRenderListY>
+                </ModalExtendComponent> */}
+            <>
+                {/* <ModalExtendComponent label={'ASIGNAR FECHAS DE OP'}>
+                    <ModalSettingEmployeeAddHeader>
+                        <InputBarComponent title={'INGRESE EL TIPO DE OP:'} placeholder={'TIPO DE OP'} inputType={'text'}/>
+                        <InputBarComponent title={'INGRESE LA OP:'} placeholder={'OP'} inputType={'number'}/>
+                    </ModalSettingEmployeeAddHeader>
+                    <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR OP'}/>
+                </ModalExtendComponent> */}
+                {/* <ModalExtendComponent label={'ASIGNACIÓN DE FECHAS DEL PROCESO'}>
+                    <ModalSettingsEmployeeAddMain label={'OP'}>
+                        <ModuloInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    <ModalSettingEmployeeAddHeader>
+                        <InputBarComponent title={'FECHA DE INICIO:'} placeholder={'FECHA'} inputType={'date'}/>
+                        <InputBarComponent title={'FECHA DE FINALIZACIÓN:'} placeholder={'FECHA'} inputType={'date'}/>
+                    </ModalSettingEmployeeAddHeader>
+                    <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'GUARDAR INFORMATION'}/>  
+                </ModalExtendComponent> */}
+            </>
+            <>
+                {/* <ModalExtendComponent label={'ASIGNAR FECHAS DEL DETALLE DE LA OP'}>
+                    <ModalSettingEmployeeAddHeader>
+                        <InputBarComponent title={'INGRESE EL TIPO DE OP:'} placeholder={'TIPO DE OP'} inputType={'text'}/>
+                        <InputBarComponent title={'INGRESE LA OP:'} placeholder={'OP'} inputType={'number'}/>
+                    </ModalSettingEmployeeAddHeader>
+                    <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR OP'}/>
+                </ModalExtendComponent> */}
+                {/* <ModalExtendComponent label={'DETALLES DE OP'}>
+                    <ModalRenderListY>
+                        <ModuloInformationComponent/>
+                        <ModuloInformationComponent/>
+                        <ModuloInformationComponent/>
+                        <ModuloInformationComponent/>
+                    </ModalRenderListY>
+                    <ModalSettingsEmployeeAddMain label={'DETALLES DE OP SELECCIONADO'}>
+                        <ModuloInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR DETALLE DE OP'}/>
+                </ModalExtendComponent> */}
+                {/* <ModalExtendComponent label={'DETALLES DE OP'}>
+                    <ModalSettingsEmployeeAddMain label={'DETALLES DE OP SELECCIONADO'}>
+                        <ModuloInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    <ModalSettingEmployeeAddHeader>
+                    <InputBarComponent title={'FECHA DE INICIO:'} placeholder={'FECHA'} inputType={'date'}/>
+                    <InputBarComponent title={'FECHA DE FINALIZACIÓN:'} placeholder={'FECHA'} inputType={'date'}/>
+                    </ModalSettingEmployeeAddHeader>
+                    <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'GUARDAR INFORMATION'}/>  
+                </ModalExtendComponent> */}
+            </>
+            {/* <ModalExtendComponent label={'DES HABILITAR OP'}>
+                <ModalSettingEmployeeAddHeader>
+                    <InputBarComponent title={'INGRESE EL TIPO DE OP:'} placeholder={'TIPO DE OP'} inputType={'text'}/>
+                    <InputBarComponent title={'INGRESE LA OP:'} placeholder={'OP'} inputType={'number'}/>
+                </ModalSettingEmployeeAddHeader>
+                <>
+                    <ModalSettingsEmployeeAddMain label={'OP SELECCIONADA'}>
+                        <OpInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    <ModalSettingEmployeeAddHeader>
+                        <InputSliderComponent title={'DES HABILITAR OP:'} placeholder={'TIPO DE OP'}/>
+                        <InputSelectListEnvelopeComponent title={'FILTRAR POR:'}></InputSelectListEnvelopeComponent>
+                        </ModalSettingEmployeeAddHeader>
+                        </>
+                        <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'GUARDAR INFORMATION'}/>  
+                    </ModalExtendComponent> */}
+            <>
+                    {/* <ModalExtendComponent label={'SELECCIONAR OP PARA EDITAR'}>
+                        <ModalSettingEmployeeAddHeader>
+                            <InputBarComponent title={'INGRESE EL TIPO DE OP:'} placeholder={'TIPO DE OP'} inputType={'text'}/>
+                            <InputBarComponent title={'INGRESE LA OP:'} placeholder={'OP'} inputType={'number'}/>
+                        </ModalSettingEmployeeAddHeader>
+                        <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR OP'}/>
+                    </ModalExtendComponent> */}
+                {/* <ModalExtendComponent label={'EDITAR OP'}>
+                    <ModalSettingsEmployeeAddMain label={'OP SELECCIONADA'}>
+                        <OpInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    <ModalSettingEmployeeAddHeader>
+                        <>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD PLANEADA'}/>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD DE REGISTROS'}/>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR FECHA DE INICIO'}/>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR FECHA DE FINALIZACIÓN'}/>
+                        </>
+                        <>
+                            <InputBarComponent title={'REASIGNAR CANTIDAD PLANEADA'} placeholder={'CANTIDAD PLANEADA'} inputType={'number'}/>
+                            <InputBarComponent title={'REASIGNAR CANTIDAD DE REGISTROS'} placeholder={'CANTIDAD DE REGISTROS'} inputType={'number'}/>
+                            <InputBarComponent title={'REASIGNAR FECHA DE INICIO'} placeholder={'FECHA DE INICIO'} inputType={'date'}/>
+                            <InputBarComponent title={'REASIGNAR FECHA DE FINALIZACIÓN'} placeholder={'FECHA DE FINALIZACIÓN'} inputType={'date'}/>                        
+                        </>
+                        
+                        <InputSliderComponent title={'DES HABILITAR OP:'} placeholder={'TIPO DE OP'}/>
+                    </ModalSettingEmployeeAddHeader>
+                    <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'GUARDAR CAMBIOS'}/>  
+                </ModalExtendComponent> */}
+            </>
+            <>
+                {/* <ModalExtendComponent label={'EDITAR DETALLE DE OP'}>
+                    <ModalSettingEmployeeAddHeader>
+                        <InputSelectListEnvelopeComponent title={'INGRESE EL TIPO DE OP'}>
+                            <InputSelectListItemComponent label={'MOP'}/>
+                            <InputSelectListItemComponent label={'MOB'}/>
+                        </InputSelectListEnvelopeComponent>
+                        <InputBarComponent title={'INGRESE LA OP'} placeholder={'OP'} inputType={'number'}/>
+                    </ModalSettingEmployeeAddHeader>
+                    <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR OP'}/>
+                </ModalExtendComponent> */}
+                {/* <ModalExtendComponent label={'DETALLES DE OP'}>
+                    <ModalRenderListY>
+                        <OpDetailInformationComponent/>
+                        <OpDetailInformationComponent/>
+                        <OpDetailInformationComponent/>
+                        <OpDetailInformationComponent/>
+                        </ModalRenderListY>
+                        <ModalSettingsEmployeeAddMain label={'DETALLES DE OP SELECCIONADO'}>
+                        <OpDetailInformationComponent/>
+                        </ModalSettingsEmployeeAddMain>
+                        <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR DETALLE DE OP'}/>
+                    </ModalExtendComponent> */}
+                {/* <ModalExtendComponent label={'DETALLES DE OP'}>
+                    <ModalSettingsEmployeeAddMain label={'DETALLES DE OP SELECCIONADO'}>
+                        <OpDetailInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    <ModalSettingEmployeeAddHeader>
+                    <>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD PLANEADA'}/>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD DE REGISTROS'}/>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR FECHA DE INICIO'}/>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR FECHA DE FINALIZACIÓN'}/>
+                    </>
+                    <>
+                        <InputBarComponent title={'REASIGNAR CANTIDAD PLANEADA'} placeholder={'CANTIDAD PLANEADA'} inputType={'number'}/>
+                        <InputBarComponent title={'REASIGNAR CANTIDAD DE REGISTROS'} placeholder={'CANTIDAD DE REGISTROS'} inputType={'number'}/>
+                        <InputBarComponent title={'REASIGNAR FECHA DE INICIO'} placeholder={'FECHA DE INICIO'} inputType={'date'}/>
+                        <InputBarComponent title={'REASIGNAR FECHA DE FINALIZACIÓN'} placeholder={'FECHA DE FINALIZACIÓN'} inputType={'date'}/>                        
+                    </>
+                        <InputSliderComponent title={'DES HABILITAR DETALLE DE OP'} placeholder={'TIPO DE OP'}/>
+                    </ModalSettingEmployeeAddHeader>
+                    <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'GUARDAR INFORMATION'}/>  
+                </ModalExtendComponent> */}
+            </>
+            <>
+                {/* <ModalExtendComponent label={'LISTA DE OP'}>
+                    <ModalSettingEmployeeAddHeader>
+                    <InputSelectListEnvelopeComponent title={'FILTRAR POR'}>
+                    <InputSelectListItemComponent label={'Todas las op'}/>
+                    <InputSelectListItemComponent label={'OP deshabilitadas'}/>
+                            <InputSelectListItemComponent label={'OP habilitadas'}/>
+                            <InputSelectListItemComponent label={'OP habilitadas'}/>
+                            <InputSelectListItemComponent label={'OP completas'}/>
+                            <InputSelectListItemComponent label={'OP incompletas'}/>
+                            </InputSelectListEnvelopeComponent>
+                            </ModalSettingEmployeeAddHeader>
+                            <ModalRenderListY>
+                            <OpInformationComponent/>
+                            <OpInformationComponent/>
+                            <OpInformationComponent/>
+                            <OpInformationComponent/>
+                            <OpInformationComponent/>
+                            <OpInformationComponent/>
+                            <OpInformationComponent/>
+                            <OpInformationComponent/>
+                            </ModalRenderListY>
+                        </ModalExtendComponent> */}
+                {/* <ModalExtendComponent label={'LISTA DE DETALLES DE OP'}>
+                    <ModalSettingsEmployeeAddMain label={'OP SELECIONADA'}>
+                    <OpInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    <ModalRenderListY>
+                    <OpInformationComponent/>
+                    <OpInformationComponent/>
+                    <OpInformationComponent/>
+                    <OpInformationComponent/>
+                    <OpInformationComponent/>
+                    <OpInformationComponent/>
+                    <OpInformationComponent/>
+                    <OpInformationComponent/>
+                    </ModalRenderListY>
+                </ModalExtendComponent> */}
+            </>
+            <>
+                {/* <ModalExtendComponent label={'ASDIGNACIÓN DE OP'}>
+                    <ModalSettingEmployeeAddHeader>
+                    <InputSelectListEnvelopeComponent title={'SELECCIONE UN MÓDULO'}>
+                    <InputSelectListItemComponent label={'MODULO-1'}/>
+                    <InputSelectListItemComponent label={'MODULO-2'}/>
+                    <InputSelectListItemComponent label={'MODULO-3'}/>
+                    <InputSelectListItemComponent label={'MODULO-5'}/>
+                    <InputSelectListItemComponent label={'MODULO-6'}/>
+                            <InputSelectListItemComponent label={'MODULO-7'}/>
+                            <InputSelectListItemComponent label={'MODULO-8'}/>
+                            <InputSelectListItemComponent label={'MODULO-9'}/>
+                            <InputSelectListItemComponent label={'MODULO-10'}/>
+                            <InputSelectListItemComponent label={'MODULO-11'}/>
+                            <InputSelectListItemComponent label={'MODULO-12'}/>
+                            </InputSelectListEnvelopeComponent>
+                            </ModalSettingEmployeeAddHeader>
+                            <ModalSettingEmployeeAddHeader>
+                            <InputSelectListEnvelopeComponent title={'INGRESE EL TIPO DE OP'}>
+                            <InputSelectListItemComponent label={'MOP'}/>
+                            <InputSelectListItemComponent label={'MOB'}/>
+                            </InputSelectListEnvelopeComponent>
+                            <InputBarComponent title={'INGRESE LA OP'} placeholder={'OP'} inputType={'number'}/>
+                            </ModalSettingEmployeeAddHeader>
+                            <>
+                            <ModalSettingsEmployeeAddMain label={'MÓDULO SELECCIONADO'}>
+                            <ModuloInformationComponent/>
+                        </ModalSettingsEmployeeAddMain>
+                    </>
+                    <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR INFORMACION'}/>  
+                </ModalExtendComponent> */}
+                {/* <ModalExtendComponent label={'ASIGNACIÓN DE OP'}>
+                    <ModalRenderListY>
+                    <OpDetailInformationComponent/>
+                    <OpDetailInformationComponent/>
+                    <OpDetailInformationComponent/>
+                    <OpDetailInformationComponent/>
+                    </ModalRenderListY>
+                    <>
+                    <ModalSettingsEmployeeAddMain label={'DETALLE DE OP SELECCIONA'}>
+                    <OpDetailInformationComponent/>
+                        </ModalSettingsEmployeeAddMain>
+                    </>
+                    <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR ASIGNACIÓN'}/>  
+                </ModalExtendComponent> */}
+            </>
+            <>
+                {/* <ModalExtendComponent label={'ADMINISTRAR MÓDULO'}>
+                    <ModalSettingEmployeeAddHeader>
+                        <InputSelectListEnvelopeComponent title={'SELECCIONE EL MÓDULO'}>
+                            <InputSelectListItemComponent label={'MODULO-1'}/>
+                            <InputSelectListItemComponent label={'MODULO-2'}/>
+                            <InputSelectListItemComponent label={'MODULO-3'}/>
+                            <InputSelectListItemComponent label={'MODULO-5'}/>
+                            <InputSelectListItemComponent label={'MODULO-6'}/>
+                            <InputSelectListItemComponent label={'MODULO-7'}/>
+                            <InputSelectListItemComponent label={'MODULO-8'}/>
+                            <InputSelectListItemComponent label={'MODULO-9'}/>
+                            <InputSelectListItemComponent label={'MODULO-10'}/>
+                            <InputSelectListItemComponent label={'MODULO-11'}/>
+                            <InputSelectListItemComponent label={'MODULO-12'}/>
+                        </InputSelectListEnvelopeComponent>
+                    </ModalSettingEmployeeAddHeader>
+                    <ModalSettingsEmployeeAddMain label={'DETALLE DE OP SELECCIONA'}>
+                        <ModuloInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR INFORMACION'}/>  
+                </ModalExtendComponent> */}
+                <ModalExtendComponent label={'ADMINISTRAR MÓDULO'}>
+                    <ModalSettingsEmployeeAddMain label={'MODULO SELECCIONADO'}>
+                        <ModuloInformationComponent/>
+                    </ModalSettingsEmployeeAddMain>
+                    {/* <ModalSettingEmployeeAddHeader>
+                        <>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD PLANEADA'}/>
+                        <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD DE REGISTROS'}/>
+                        </>        
+                    </ModalSettingEmployeeAddHeader> */}
+                        <ModalRenderListY>
+                            <EmployeeMainComponent/>
+                            <EmployeeMainComponent/>
+                            <EmployeeMainComponent/>
+                            <EmployeeMainComponent/>
+                        </ModalRenderListY>
+                    <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR ASIGNACIÓN'}/>                
+                </ModalExtendComponent>
+            </>
         </div>
     )
 }
