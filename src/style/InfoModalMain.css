@@ -1,0 +1,30 @@
+.info-modal-main-container{
+    width: 40vw;
+    height: min-content;
+    /* margin: 2%; */
+    border-radius: 4px;
+    background-color: #B1C1FD;
+    display: flex;
+    
+}
+.info-modal-main-frame-container{
+    width: 99%;
+    height: min-content;
+    margin: 1%;
+}
+.info-modal-main-title-container{
+    display: flex;
+    height: 4vh;
+    width: 100%;
+}
+.info-modal-main-item-list-colum-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: bold;
+    width: 33%;
+    height: 100%;
+    margin-right: 0.5%;
+    background-color: #26387A;
+}

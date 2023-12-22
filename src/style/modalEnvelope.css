@@ -1,0 +1,15 @@
+.modal-envelope-container{
+    width: 40vw;
+    background-color: #B1C1FD;
+    border-radius: 4px;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.modal-envelope-frame-container{
+    width: 95%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}

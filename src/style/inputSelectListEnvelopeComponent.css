@@ -22,6 +22,10 @@
 .input-select-list-envelope-component-title{
     background-color: #FFF;
     font-weight: 700;
+    white-space: nowrap;
+    overflow:hidden;
+	/* white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    /* overflow: hidden;  */
 }
 .input-select-list-envelope-component-content{
     display: flex;

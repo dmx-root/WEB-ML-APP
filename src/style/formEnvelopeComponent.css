@@ -1,0 +1,17 @@
+
+.form-evelope-component-container{
+    width: 40vw;
+    height: min-content;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #EEE;
+    margin-bottom: 5%;
+}
+
+#form-envelope-component-form-container{
+    padding: 4%;
+    width: 95%;
+    height: min-content;
+    margin: 0;
+}

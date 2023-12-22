@@ -1,0 +1,22 @@
+.info-modal-row-container{
+    width: 100%;
+    height: 4vh;
+    margin-top: 0.5%;
+    display: flex;
+
+}
+.info-modal-row-colum-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 2.2vh;
+    height: 100%;
+    width: 33%;
+    margin-right: 0.5%;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+}
+.info-modal-row-colum-remake{
+    font-weight: 600;
+}

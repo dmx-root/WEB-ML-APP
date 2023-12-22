@@ -1,0 +1,27 @@
+.info-modal-header-container{
+    width: 40vw;
+    background-color: #B1C1FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.info-modal-header-frame-container{
+    height: 10vh;
+    width: 100%;
+    height: min-content;
+    margin: 2%;
+    display: flex;
+}
+.info-modal-header-icon-container{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-modal-header-info-container{
+    width: 80%;
+    height: min-content;
+}

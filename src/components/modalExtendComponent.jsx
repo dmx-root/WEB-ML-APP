@@ -1,8 +1,5 @@
 import '../style/modalExtendComponent.css'
 
-//este componente es resizeble lo que quiere decir que de la cantidad de elemente que extienda el modal
-// este se adaptará al tamaño ideal 
-
 export function ModalExtendComponent({children,label}){
     return(
         <div className="modal-extend-component-container">
@@ -28,5 +25,6 @@ export function ModalExtendComponent({children,label}){
                 </div>
             </div>
         </div>
+   
     );
 }

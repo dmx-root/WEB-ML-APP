@@ -19,7 +19,6 @@ import { ModalRenderListY }                 from '../components/modalRenderListY
 import { AlertMainComponent }               from '../components/alertMainComponent';
 import { UserInformationComponent }         from '../components/userInformationComponent';
 import { ModuloInformationComponent }       from '../components/moduloInformationComponent';
-import { ModalInterface } from '../modules/main';
 import                                           '../style/settingsView.css';
 import { OpInformationComponent } from '../components/opInformationComponent';
 import { OpDetailInformationComponent } from '../components/opDetailInformationComponent';
@@ -27,14 +26,13 @@ import { OcrInformationComponent } from '../components/ocrInformationComponent';
 import { InputSliderComponent } from '../components/InputSliderComponent';
 import { InputSelectListEnvelopeComponent } from '../components/inputSelectListEnvelopeComponent';
 import { InputSelectListItemComponent } from '../components/inputSelectListItemComponent';
-
-
-
+import { FormEnvelopeComponent } from '../components/formEnvelopeComponent';
+import { Eventos } from '../modals/modals'
 
 export function SettingsView(){
 
     const {selectedItem,handleItemClick}=useMenuSelection('Cuenta');
-    const modales=new ModalInterface();
+    const Modal=new Eventos();
     return(
         <div className="settings-view-container">
             <div className="settings-view-nav-container">
@@ -439,22 +437,23 @@ export function SettingsView(){
                     <ModalSettingsEmployeeAddMain label={'DETALLES DE OP SELECCIONADO'}>
                         <OpDetailInformationComponent/>
                     </ModalSettingsEmployeeAddMain>
-                    <ModalSettingEmployeeAddHeader>
                     <>
+                    <ModalSettingEmployeeAddHeader>
                         <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD PLANEADA'}/>
                         <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD DE REGISTROS'}/>
                         <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR FECHA DE INICIO'}/>
                         <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR FECHA DE FINALIZACIÓN'}/>
-                    </>
-                    <>
-                        <InputBarComponent title={'REASIGNAR CANTIDAD PLANEADA'} placeholder={'CANTIDAD PLANEADA'} inputType={'number'}/>
-                        <InputBarComponent title={'REASIGNAR CANTIDAD DE REGISTROS'} placeholder={'CANTIDAD DE REGISTROS'} inputType={'number'}/>
-                        <InputBarComponent title={'REASIGNAR FECHA DE INICIO'} placeholder={'FECHA DE INICIO'} inputType={'date'}/>
-                        <InputBarComponent title={'REASIGNAR FECHA DE FINALIZACIÓN'} placeholder={'FECHA DE FINALIZACIÓN'} inputType={'date'}/>                        
-                    </>
-                        <InputSliderComponent title={'DES HABILITAR DETALLE DE OP'} placeholder={'TIPO DE OP'}/>
                     </ModalSettingEmployeeAddHeader>
-                    <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'GUARDAR INFORMATION'}/>  
+                    </>
+                    <FormEnvelopeComponent onSubmit={(e)=>console.log(e)}>
+                        <InputBarComponent title={'REASIGNAR CANTIDAD PLANEADA'} name={'planeada'}placeholder={'CANTIDAD PLANEADA'} inputType={'number'}/>
+                        <InputBarComponent title={'REASIGNAR CANTIDAD DE REGISTROS'} name={'Registro'} placeholder={'CANTIDAD DE REGISTROS'} inputType={'number'}/>
+                        <InputBarComponent title={'REASIGNAR FECHA DE INICIO'}       name={'fechaInicio'}        placeholder={'FECHA DE INICIO'} inputType={'date'}/>
+                        <InputBarComponent title={'REASIGNAR FECHA DE FINALIZACIÓN'} name={'fechaFinalizacion'} placeholder={'FECHA DE FINALIZACIÓN'} inputType={'date'}/>                        
+                        <InputSliderComponent title={'DES HABILITAR DETALLE DE OP'} name={'estadoOp'} placeholder={'TIPO DE OP'}/>
+                    <ButtonActionAllWidth  backColor={'#26387A'} LetterColor={'#FFF'} label={'GUARDAR INFORMATION'}/>  
+                    </FormEnvelopeComponent>
+                    
                 </ModalExtendComponent> */}
             </>
             <>
@@ -564,16 +563,16 @@ export function SettingsView(){
                     </ModalSettingsEmployeeAddMain>
                     <ButtonActionEndWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR INFORMACION'}/>  
                 </ModalExtendComponent> */}
-                <ModalExtendComponent label={'ADMINISTRAR MÓDULO'}>
+                {/* <ModalExtendComponent label={'ADMINISTRAR MÓDULO'}>
                     <ModalSettingsEmployeeAddMain label={'MODULO SELECCIONADO'}>
                         <ModuloInformationComponent/>
                     </ModalSettingsEmployeeAddMain>
-                    {/* <ModalSettingEmployeeAddHeader>
+                    <ModalSettingEmployeeAddHeader>
                         <>
                         <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD PLANEADA'}/>
                         <InputActionEdit buttonLabel={'Editar...'}  backColor={'#B1C1FD'} letterColor={'#26387A'} title={'REASIGNAR CANTIDAD DE REGISTROS'}/>
                         </>        
-                    </ModalSettingEmployeeAddHeader> */}
+                    </ModalSettingEmployeeAddHeader>
                         <ModalRenderListY>
                             <EmployeeMainComponent/>
                             <EmployeeMainComponent/>
@@ -581,7 +580,8 @@ export function SettingsView(){
                             <EmployeeMainComponent/>
                         </ModalRenderListY>
                     <ButtonActionAllWidth backColor={'#26387A'} LetterColor={'#FFF'} label={'CARGAR ASIGNACIÓN'}/>                
-                </ModalExtendComponent>
+                </ModalExtendComponent> */}
+                {Modal['asignacionDeOP'](1)}
             </>
         </div>
     )

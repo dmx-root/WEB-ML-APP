@@ -1,8 +1,8 @@
 import '../style/modalOpHeaderItem.css';
 
-export function ModalOpHeaderItem({label1,content1,label2,content2}){
+export function ModalOpHeaderItem({label1,content1,label2,content2, color}){
     return(
-        <div className="modal-op-header-item-container">
+        <div className="modal-op-header-item-container" style={{color}}>
             <div className="modal-op-header-item-colum modal-op-header-item-colum-title">
                 <span>{label1}</span>
             </div>
